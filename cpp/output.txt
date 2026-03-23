@@ -1,0 +1,93 @@
+============================================
+       RIDE SHARING SYSTEM (C++)            
+============================================
+
+--- Polymorphic Fare Calculation ---
+  Ride 101 (Standard): $20.75
+  Ride 102 (Premium): $29.00
+  Ride 103 (Standard): $9.95
+  Ride 104 (Premium): $50.00
+
+--- Polymorphic Ride Details ---
+[ Standard Ride ]
+  Ride ID       : 101
+  Pickup        : Downtown
+  Dropoff       : Airport
+  Distance      : 12.50 miles
+  Fare          : $20.75
+  Rate          : $1.50/mile + $2.00 base
+
+[ Premium Ride ]
+  Ride ID       : 102
+  Pickup        : Mall
+  Dropoff       : University
+  Distance      : 8.00 miles
+  Fare          : $29.00
+  Rate          : $3.00/mile + $5.00 base
+
+[ Standard Ride ]
+  Ride ID       : 103
+  Pickup        : Park Ave
+  Dropoff       : City Center
+  Distance      : 5.30 miles
+  Fare          : $9.95
+  Rate          : $1.50/mile + $2.00 base
+
+[ Premium Ride ]
+  Ride ID       : 104
+  Pickup        : Hotel Grand
+  Dropoff       : Beach Resort
+  Distance      : 15.00 miles
+  Fare          : $50.00
+  Rate          : $3.00/mile + $5.00 base
+
+===== Driver Info =====
+  Driver ID     : 1
+  Name          : Alice Johnson
+  Rating        : 4.80 / 5.0
+  Completed Rides: 2
+  -------------------------
+[ Standard Ride ]
+  Ride ID       : 101
+  Pickup        : Downtown
+  Dropoff       : Airport
+  Distance      : 12.50 miles
+  Fare          : $20.75
+  Rate          : $1.50/mile + $2.00 base
+  -------------------------
+[ Premium Ride ]
+  Ride ID       : 102
+  Pickup        : Mall
+  Dropoff       : University
+  Distance      : 8.00 miles
+  Fare          : $29.00
+  Rate          : $3.00/mile + $5.00 base
+
+  Total Earnings: $49.75
+
+===== Rider Info =====
+  Rider ID      : 1
+  Name          : Bob Smith
+  Requested Rides: 2
+  -------------------------
+[ Standard Ride ]
+  Ride ID       : 103
+  Pickup        : Park Ave
+  Dropoff       : City Center
+  Distance      : 5.30 miles
+  Fare          : $9.95
+  Rate          : $1.50/mile + $2.00 base
+  -------------------------
+[ Premium Ride ]
+  Ride ID       : 104
+  Pickup        : Hotel Grand
+  Dropoff       : Beach Resort
+  Distance      : 15.00 miles
+  Fare          : $50.00
+  Rate          : $3.00/mile + $5.00 base
+
+  Total Spent   : $59.95
+
+============================================
+              END OF DEMO                   
+============================================

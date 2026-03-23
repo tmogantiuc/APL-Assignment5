@@ -64,21 +64,116 @@ The Ride Sharing System must include the following components at a minimum. You 
 
 ---
 
-## Project Structure
+## 4. Project Structure
 
 ```
 APL-Assignment5/
-├── cpp/          # C++ implementation
-├── smalltalk/    # Smalltalk implementation
-└── readMe        # This file
+├── cpp/
+│   └── main.cpp                    # C++ implementation
+├── smalltalk/
+│   └── RideSharingSystem.st        # GNU Smalltalk implementation
+└── readMe                          # This file
 ```
 
 ---
 
-## OOP Principles Demonstrated
+## 5. OOP Principles Demonstrated
 
-| Principle       | How It's Applied                                                                 |
-|-----------------|----------------------------------------------------------------------------------|
-| Encapsulation   | Private attributes (`assignedRides`, `requestedRides`) with public accessors     |
-| Inheritance     | `StandardRide` and `PremiumRide` extend the base `Ride` class                    |
-| Polymorphism    | Overridden `fare()` called on a collection of mixed ride types at runtime         |
+| Principle         | How It's Applied                                                                     |
+|-------------------|--------------------------------------------------------------------------------------|
+| **Encapsulation** | Private attributes (`assignedRides`, `requestedRides`) with public accessor methods  |
+| **Inheritance**   | `StandardRide` and `PremiumRide` extend the base `Ride` class                        |
+| **Polymorphism**  | Overridden `fare()` and `rideDetails()` called on a mixed collection of ride types   |
+
+---
+
+## 6. How to Build, Run & Capture Results
+
+### 6.1 C++ Implementation
+
+#### Prerequisites
+
+- A C++ compiler with **C++17** support
+- **macOS:** Install Xcode Command Line Tools:
+  ```bash
+  xcode-select --install
+  ```
+- **Linux (Ubuntu/Debian):**
+  ```bash
+  sudo apt install g++
+  ```
+
+#### Build & Run
+
+```bash
+# Navigate to the cpp folder
+cd cpp/
+
+# Compile
+g++ -std=c++17 -o ride_sharing main.cpp
+
+# Run
+./ride_sharing
+```
+
+#### Save Output to File (for screenshots)
+
+```bash
+./ride_sharing > output.txt 2>&1
+cat output.txt
+```
+
+#### Capture Screenshots
+
+1. Run `./ride_sharing` in your terminal
+2. Screenshot the **full terminal output** — macOS: `Cmd + Shift + 4` then drag over the terminal
+3. Screenshot the **source code** open in your IDE
+
+---
+
+### 6.2 Smalltalk Implementation
+
+#### Prerequisites — Install GNU Smalltalk
+
+```bash
+# macOS (Homebrew)
+brew install gnu-smalltalk
+
+# Ubuntu / Debian
+sudo apt install gnu-smalltalk
+
+# Verify
+gst --version
+```
+
+#### Run
+
+```bash
+# Navigate to the smalltalk folder
+cd smalltalk/
+
+# Execute
+gst RideSharingSystem.st
+```
+
+#### Save Output to File (for screenshots)
+
+```bash
+gst RideSharingSystem.st > output.txt 2>&1
+cat output.txt
+```
+
+#### Capture Screenshots
+
+1. Run `gst RideSharingSystem.st` in your terminal
+2. Screenshot the **full terminal output** — macOS: `Cmd + Shift + 4` then drag over the terminal
+3. Screenshot the **source code** open in your IDE
+
+---
+
+## 7. Fare Calculation Reference
+
+| Ride Type | Base Fare | Rate per Mile | Example (10 mi) |
+|-----------|-----------|---------------|------------------|
+| Standard  | $2.00     | $1.50         | $17.00           |
+| Premium   | $5.00     | $3.00         | $35.00           |
